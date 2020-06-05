@@ -1,0 +1,39 @@
+{
+  "name": "anydoor",
+  "version": "0.1.1",
+  "description": "Tiny NodeJS Static Web server",
+  "main": "src/app.js",
+  "bin": {
+    "anydoor": "bin/anydoor"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "fix": "eslint --fix ."
+  },
+  "pre-commit": [
+    "fix",
+    "lint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zmy1203/anydoor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zmy1203/anydoor/issues"
+  },
+  "homepage": "https://github.com/zmy1203/anydoor#readme",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "curl": "^0.1.4",
+    "handlebars": "^4.7.6",
+    "yargs": "^15.3.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.0.0",
+    "pre-commit": "^1.2.2"
+  }
+}
